@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy Health-Meta to GitHub Pages
 
 on:
   push:
@@ -22,11 +22,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    
-    # Yaha apne us separate folder ka naam likhein jisme aapka project hai:
-    defaults:
-      run:
-        working-directory: ./Health-Metas   # <-- Apne folder ka naam yaha likhein
 
     steps:
       - name: Checkout Code
@@ -51,7 +46,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './Health-Metas/dist'   # <-- Us folder ka dist path
+          path: 'dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
