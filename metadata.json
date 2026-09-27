@@ -1,0 +1,6 @@
+{
+  "name": "Health Meta",
+  "description": "Health Meta - Real-time AI metabolic intelligence, calorie & macro tracking, 99% accurate food scanner, and dynamic personalized exercise recommendations.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

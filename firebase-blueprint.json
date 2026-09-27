@@ -1,0 +1,68 @@
+{
+  "entities": {
+    "users": {
+      "fields": {
+        "id": {
+          "type": "string",
+          "description": "Firebase Auth user UID"
+        },
+        "name": {
+          "type": "string",
+          "description": "User display name"
+        },
+        "email": {
+          "type": "string",
+          "description": "User email address"
+        },
+        "photoUrl": {
+          "type": "string",
+          "description": "User photo URL from Google"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Account creation timestamp ISO string"
+        },
+        "lastLoginAt": {
+          "type": "string",
+          "description": "Last login timestamp ISO string"
+        }
+      }
+    },
+    "userProfiles": {
+      "fields": {
+        "userId": {
+          "type": "string",
+          "description": "Reference to user UID"
+        },
+        "weightKg": {
+          "type": "number",
+          "description": "Weight in kilograms"
+        },
+        "heightCm": {
+          "type": "number",
+          "description": "Height in centimeters"
+        },
+        "age": {
+          "type": "number",
+          "description": "Age in years"
+        },
+        "gender": {
+          "type": "string",
+          "description": "male or female"
+        },
+        "goal": {
+          "type": "string",
+          "description": "lose, gain, or maintain"
+        },
+        "targetCalories": {
+          "type": "number",
+          "description": "Target daily calories"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Timestamp of last update"
+        }
+      }
+    }
+  }
+}
